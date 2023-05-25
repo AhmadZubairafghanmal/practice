@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background: rgb(16,16,16);
+ font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 2rem 5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+a:before{
+    content: 'DOWNLOAD';
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+}
+ 
+a:hover:before{
+   transform: translateY(0);
+   -webkit-transform: translateY(0);
+   -moz-transform: translateY(0);
+   -ms-transform: translateY(0);
+   -o-transform: translateY(0);
+}
